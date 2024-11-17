@@ -1,4 +1,3 @@
-// backend/routes/cars.js
 
 const express = require('express');
 const router = express.Router();
@@ -7,7 +6,6 @@ const auth = require('../middleware/auth');
 const multer = require('multer');
 const upload = multer({ dest: 'uploads/' });
 
-// Create Car
 router.post('/', auth, upload.array('images', 10), async (req, res) => {
   try {
     const { title, description, tags } = req.body;
@@ -65,7 +63,6 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-// Get Car Details
 router.get('/:id', auth, async (req, res) => {
   try {
     const car = await Car.findById(req.params.id).populate('userId', 'username');

@@ -1,4 +1,4 @@
-// backend/models/Car.js
+
 
 const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate-v2');
@@ -14,7 +14,6 @@ const CarSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Apply the pagination plugin to the schema
 CarSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('Car', CarSchema);

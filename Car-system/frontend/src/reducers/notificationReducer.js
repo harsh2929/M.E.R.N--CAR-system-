@@ -1,5 +1,4 @@
-// src/store/reducers/notificationReducer.js
-
+ 
 const initialState = {
   open: false,
   message: '',

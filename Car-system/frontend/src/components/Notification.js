@@ -1,5 +1,4 @@
-// src/components/Notification.js
-
+ 
 import React from 'react';
 import { Snackbar, Alert } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';

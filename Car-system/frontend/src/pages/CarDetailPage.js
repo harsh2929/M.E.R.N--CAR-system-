@@ -1,5 +1,4 @@
-// src/pages/CarDetailPage.js
-
+ 
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCarDetails, deleteCar } from '../store/actions/carActions';

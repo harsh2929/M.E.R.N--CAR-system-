@@ -1,5 +1,4 @@
-// src/pages/CarCreatePage.js
-
+ 
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addCar } from '../store/actions/carActions';
